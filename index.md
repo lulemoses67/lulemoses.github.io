@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## hultech
 
 You can use the [editor on GitHub](https://github.com/lulemoses67/lulemoses.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
