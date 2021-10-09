@@ -1,2 +1,8 @@
+// we shall use jquery
 
-// side nav bars control begins here
+$(function(){
+//Navigation synatx 
+    $('.menuBtn').click(function(){
+        $('aside').toggle();
+    });
+});
