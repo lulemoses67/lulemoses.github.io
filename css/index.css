@@ -1,133 +1,69 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Sans-Serif";
 }
-/*    HEADER STYLING BEGISNS HERE   */
-
+/* the header begins   */
 header{
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
-  color: white;
-  background-color: dodgerblue;
+  box-shadow: 0 3px 6px black;
 }
-.header{
-  display: flex; 
-  justify-content: space-between; 
-  padding:24px ;
+header .logo,header nav{
+    padding: 20px;
 }
-.logo,.header{
-  font-weight: 300;
-  cursor: pointer;
+header nav .menuBtn{
+    display: none;
 }
-/*    HEADER STYLING ENDS HERE   */
-
-/*    ASIDE STYLING BEGINS HERE   */
-
+.logo{
+    text-transform: capitalize;
+    font-weight: 200;
+}
+/* the header ends here */
+/* the aside begins here */
 aside{
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #e3e5e5;
-  overflow-y: scroll;
-  font-weight: 300;
-  transition: width 5s;
+    position: absolute;
+    display: none;
+    margin: 30px;
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 3px 6px black;
+    border-radius: 10px;
 }
-
-/*    ASIDE STYLING ENDS HERE   */
-
-/*    MAIN STYLING BEGINS HERE   */
-
-main{
-  margin-top: 60px;
-}
-.welcome{
-  display: block;
-  text-align: center;
-  margin: 5px;
-  padding:60px;
-}
-.welcome h2{
+aside ul{
     padding: 10px;
-    color: dodgerblue;
-    font-weight: 300;
-    font-size: 38px;
-    text-transform: capitalize
+    text-align: center;
 }
-.welcome p{
+aside ul li{
+    padding: 5px;
+}
+aside i{
     padding: 10px;
 }
-.welcome button{
-    margin: auto;
-}
-.title_section{
-  padding: 15px;
-  text-align: center;
-  font-weight: 200;
-  color: dodgerblue;
-  text-transform: capitalize;
-}
-.recent_post{
-  display: flex;
-  width: 100%;
-}
-.recent_post div {
-  width: 30%
-  padding:10px;
-}
-.recent_title{
- padding: 10px;
-}
-.content{
-  padding: 10px 5px;
-}
-.content p{
-  font-weight: 200;
-  font-size: 18px;
-}
-/*    MAIN STYLING ENDS HERE   */
-
-/*    FOOTER STYLING STARTS HERE   */
-
-footer{
-  background-color: black;
-  color:white;
-}
-.copyright{
-  padding-top: 30px;
-  text-align: center;
-}
-
-/*    FOOTER STYLING ENDS HERE   */
-
-/* TAGS STYLING */
-a{
- text-decoration: none;
- color: black;
-}
-section{
- display: block;
- margin-top: 20px;
- padding: 5px;
-}
-i{
-  font-weight: 200;
-}
-button{
-  display: block;
-  border: none;
-  padding: 10px;
+/* the aside ends here */
+/* default tags stylings */
+ul li {
+    list-style-type: none;
 }
 ol{
-  display: inline;
+    display: inline;
 }
-ol li{
-  display: inline-block;
-  padding: 0 2px;
-  cursor: pointer;
+ol li {
+    display: inline-block;
 }
-img{
-  width: 100%;
+li ,.logo,.menuBtn{
+    cursor: pointer;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 500px) {
+    header nav ol{
+        display: none;
+    }
+    header nav .menuBtn{
+        display: block;
+    }
 }
