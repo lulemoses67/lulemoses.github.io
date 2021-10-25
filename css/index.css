@@ -1,122 +1,160 @@
-/* Some default element styling */
-*
-{
- margin: 0;
- padding: 0;
-}
-html,body{
-   height: 100%; 
+/*default styings */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 300;
 }
 a{
     text-decoration: none;
-}
-ul li,ol li{
-    list-style-type: none;
-    padding: 5px;
+    color: inherit;
 }
 ol{
     display: inline;
 }
-ol li {
+ol li{
     display: inline-block;
+    list-style-type: none;
 }
-.logo ,li,.menuBtn{
-    text-transform: capitalize;
-    cursor: pointer;
+ol li a{
+    color: inherit;
+}
+ul{
+    display: block;
+}
+ul li{
+    padding: 5px;
+    list-style-type: none;
 }
 img{
-    width: 100%
+    width: 100%;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+}
+input ,textarea{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+h1,h2,h3,h4,h5,h6,li,.menuBtn{
+    cursor: pointer;
+    text-transform: capitalize;
 }
 
-/* header begins here with the logo and menu bar */
+/* HEADER STYLINGS BEGINS*/
 header{
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3),0 7px 21px 0 rgba(0,0,0,0.20);
-  background-color: white;
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color:teal;
+    color: white;
 }
-header .logo,header .menu{
-    padding: 20px 50px;
-}
-header nav .menuBtn{
-    display: none;
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
 }
 .logo{
-    font-family: fantasy;
     font-weight: 200;
+    color: floralwhite;
+    letter-spacing: 2px;
 }
-.top_navbars li a,.logo, header .menu,.side_navbars li a{
-    color: gray;
+.header form {
+    width: 40%;
 }
-._searchBox {
-    width: 50%;
+.header form input{
+    width: 100%;
 }
-._searchBox input{
-    width: 80%;
-    padding: 15px;
-}
-
-/* aside begins with the side nav here */
-aside{
-    display: block;
-    z-index: 100;
-    position: fixed;
+.header .menuBtn{
     display: none;
-    margin: auto;
-    width: 90%;
-    height: 100%;
-    background-color: white;
-    box-shadow: 0 3px 6px gray;
 }
-aside i, aside .side_navbars,aside .logo{
-    display: block;
-    padding: 20px;
-}
-
-/* main begins here */
-main{
-    margin-top: 90px;
-}
-section{
-    display: block;
-    align-items: center;
-    padding: 30px;
-}
-.hero{
+.topNavBar li{
+    padding:0 5px;
     text-align: center;
 }
-.hero img{
-    padding: 20px 0;
-    width: 50%;
-}
-
-/* Media quries for a small screen with a max-width of 500px */
-@media screen and (max-width: 700px) {
-    header .menu .top_navbars{
+@media only screen and (max-width: 900px) {
+    .topNavBar{
         display: none;
-    }
-    header nav .menuBtn{
+    } 
+    .header .menuBtn{
         display: block;
     }
-    header .logo,header .menu{
-        padding: 20px 50px;
 }
-    main{
-        margin-top: 70px;
-    }
-    .hero{
-    text-align: left;
-}
-    .hero img{
+/* HEADER STYLINGS ENDS*/
+/* aside styings begins */
+
+aside{
+    display: none;
+    position: fixed;
+    margin: auto;
     width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    z-index: 100;
+    overflow-y: scroll;
 }
-._searchBox input{
-    width: 100%;
+.aside{
     padding: 10px;
 }
-
-
+.aside .menuBtn{
+    text-align: right;
 }
+/* aside styings ends */
+/* main styings begins */
+main{
+    margin-top: 100px;
+    height: 100%;
+}
+section{
+    padding: 10px 40px;
+}
+.section_title{
+    padding: 10px 0;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex div{
+    width: 100%;
+    margin: 5px;
+}
+.home{
+    align-items: center;
+}
+@media only screen and (max-width: 700px) {
+    section{
+      padding: 10px;  
+    }
+    .flex{
+        display: block;
+    }
+}
+/* main styings ends */
+/* footer styings begins */
+footer{
+    margin-top: 100px;
+    background-color: darkseagreen;
+    color: white;
+    font-weight: 200;    font-weight: 200;
+}
+footer h5{
+    padding: 8px;
+}
+.copyright{
+    background-color: #333;
+    text-align: center;
+    padding-top: 30px;
+}
+.contact_us input ,.contact_us textarea{
+    width: auto;
+    margin: 8px 0;
+}
+/* footer styings ends */
