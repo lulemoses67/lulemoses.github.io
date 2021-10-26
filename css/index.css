@@ -45,7 +45,9 @@ h1,h2,h3,h4,h5,h6,li,.menuBtn{
     cursor: pointer;
     text-transform: capitalize;
 }
-
+p{
+    padding: 5px 0;
+}
 /* HEADER STYLINGS BEGINS*/
 header{
     display: block;
@@ -129,12 +131,22 @@ section{
 .home{
     align-items: center;
 }
+.details{
+    display: block;
+    padding: 8px;
+}
 @media only screen and (max-width: 700px) {
     section{
       padding: 10px;  
     }
     .flex{
         display: block;
+    }
+    .flex div{
+        margin: 0;
+    }
+    .details{
+        display: none;
     }
 }
 /* main styings ends */
