@@ -126,14 +126,23 @@ section{
 }
 .flex div{
     width: 100%;
-    margin: 5px;
+    margin: 10px;
 }
 .home{
     align-items: center;
+    text-align: center;
 }
 .details{
     display: block;
     padding: 8px;
+}
+.post_card{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+}
+.recent_post{
+     padding: 0 15px 15px 15px;
+     font-weight: 200;
+     color: midnightblue;
 }
 @media only screen and (max-width: 700px) {
     section{
@@ -143,7 +152,7 @@ section{
         display: block;
     }
     .flex div{
-        margin: 0;
+        margin: 10px 0;
     }
     .details{
         display: none;
