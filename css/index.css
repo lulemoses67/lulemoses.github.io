@@ -37,7 +37,7 @@ button{
 }
 input ,textarea{
     outline: none;
-    border: none;
+    border: 1px solid gray;
     padding: 10px;
     border-radius: 10px;
 }
@@ -53,8 +53,9 @@ header{
     display: block;
     position: fixed;
     width: 100%;
-    background-color:teal;
-    color: white;
+    background-color: white;
+    color: teal;
+    box-shadow: 0 0 9px 3px rgba(41,41,41,.25);
 }
 .header{
     display: flex;
@@ -64,7 +65,6 @@ header{
 }
 .logo{
     font-weight: 200;
-    color: floralwhite;
     letter-spacing: 2px;
 }
 .header form {
@@ -72,6 +72,7 @@ header{
 }
 .header form input{
     width: 100%;
+    border: 1px solid teal;
 }
 .header .menuBtn{
     display: none;
@@ -95,14 +96,18 @@ aside{
     display: none;
     position: fixed;
     margin: auto;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    background-color: lightgray;
+    background-color: white;
+    color: teal;
     z-index: 100;
     overflow-y: scroll;
 }
 .aside{
-    padding: 10px;
+    padding: 30px;
+}
+.sideNavBar li{
+    padding: 8px;
 }
 .aside .menuBtn{
     text-align: right;
@@ -129,6 +134,7 @@ section{
     margin: 10px;
 }
 .home{
+    margin: auto;
     align-items: center;
     text-align: center;
 }
@@ -162,20 +168,33 @@ section{
 /* footer styings begins */
 footer{
     margin-top: 100px;
-    background-color: darkseagreen;
-    color: white;
+    background-color: whitesmoke;
     font-weight: 200;    font-weight: 200;
+}
+.footer_body{
+    margin: auto;
+}
+.footer_body article div{
+    margin: auto;
+    padding: 0 100px;
 }
 footer h5{
     padding: 8px;
 }
 .copyright{
-    background-color: #333;
+    background-color: black;
     text-align: center;
     padding-top: 30px;
+    color: white;
 }
 .contact_us input ,.contact_us textarea{
     width: auto;
     margin: 8px 0;
+}
+
+@media only screen and (max-width: 900px) {
+   .footer_body article div{
+    padding: inherit;
+} 
 }
 /* footer styings ends */
