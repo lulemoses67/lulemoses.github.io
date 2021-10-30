@@ -9,6 +9,21 @@ a{
     text-decoration: none;
     color: inherit;
 }
+a:hover{
+    background-color: lightblue;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-twitter{
+    color: skyblue;
+}
+.fa-linkedin{
+    color: blue
+}
+.fa-google-plus{
+    color: red
+}
 ol{
     display: inline;
 }
@@ -26,11 +41,11 @@ ul li{
     padding: 5px;
     list-style-type: none;
 }
-img{
+img ,iframe{
     width: 100%;
 }
 button{
-  border: none;
+  border: 1px solid gray;
   outline: none;
   padding: 8px;
   border-radius: 5px;
@@ -48,13 +63,28 @@ h1,h2,h3,h4,h5,h6,li,.menuBtn{
 p{
     padding: 5px 0;
 }
+q{
+    margin: 5px;
+    display: block;
+    padding: 10px;
+}
+.active{
+    border-bottom: 1px solid black;
+}
+.breadcrumb{
+    display: block;
+    padding: 20px;
+    background-color: azure;
+}
+.aboutme{
+    width: 50%;
+}
 /* HEADER STYLINGS BEGINS*/
 header{
     display: block;
     position: fixed;
     width: 100%;
     background-color: white;
-    color: teal;
     box-shadow: 0 0 9px 3px rgba(41,41,41,.25);
 }
 .header{
@@ -72,7 +102,6 @@ header{
 }
 .header form input{
     width: 100%;
-    border: 1px solid teal;
 }
 .header .menuBtn{
     display: none;
@@ -99,7 +128,6 @@ aside{
     width: 90%;
     height: 100%;
     background-color: white;
-    color: teal;
     z-index: 100;
     overflow-y: scroll;
 }
@@ -110,6 +138,7 @@ aside{
     padding: 8px;
 }
 .aside .menuBtn{
+    display: block;
     text-align: right;
 }
 /* aside styings ends */
@@ -146,9 +175,8 @@ section{
     box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
 }
 .recent_post{
-     padding: 0 15px 15px 15px;
+     padding: 18px 9px;
      font-weight: 200;
-     color: midnightblue;
 }
 @media only screen and (max-width: 700px) {
     section{
@@ -181,10 +209,14 @@ footer{
 footer h5{
     padding: 8px;
 }
+.social_media{
+    align-items: center;
+}
 .copyright{
+    margin-top: 30px;
+    padding-top: 30px;
     background-color: black;
     text-align: center;
-    padding-top: 30px;
     color: white;
 }
 .contact_us input ,.contact_us textarea{
@@ -194,7 +226,7 @@ footer h5{
 
 @media only screen and (max-width: 900px) {
    .footer_body article div{
-    padding: inherit;
+    padding: 20px 0;
 } 
 }
 /* footer styings ends */

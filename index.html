@@ -9,7 +9,7 @@
         <meta name="title" content="HULTECH"/>
         <meta name="description" content="A self-programmer from the streets of kampala"/>
         <!--CSS -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/1633942015426.jpg">
         <link rel="stylesheet" href="css/index.css">
         <title>hultech</title>
     </head>
@@ -25,13 +25,12 @@
                 </form>
                 <nav>
                     <ol class="topNavBar">
-                        <li><a href="#"><i class="fas fa-home"></i><br/>home</a></li>
-                        <li><a href="#"><i class="fas fa-tasks"></i><br/>feeds</a></li>
-                        <li><a href="#"><i class="fas fa-hands-helping"></i><br/>subcribe</a></li>
-                        <li><a href="#contact"><i class="far fa-envelope"></i><br/>contact</a></li>
-                        <li><a href="./about_us.html"><i class="far fa-address-card"></i><br/>about us</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-home"></i><br/>home</a></li>
+                        <li><a href="feeds.html"><i class="fa fa-feed"></i><br/>feeds</a></li>
+                        <li><a href="./about_us.html"><i class="fa fa-address-card"></i><br/>about us</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i><br/>contact</a></li>
                     </ol>
-                    <p class="menuBtn button">menu</p>
+                    <i class="fa fa-bars menuBtn button"></i>
                 </nav>
             </div>
         </header>
@@ -39,13 +38,12 @@
         <!-- aside begins with the side nav here  -->
         <aside>
             <div class="aside">
-                <p class="menuBtn">close</p>
+                <i class="fa fa-close fa-lg menuBtn"></i>
                 <ul class="sideNavBar">
                     <li><a href="#">home</a></li>
-                    <li><a href="#">news</a></li>
-                    <li><a href="#">search</a></li>
+                    <li><a href="feeds.html">feeds</a></li>
                     <li><a href="./about_us.html">about us</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
         </aside>
@@ -53,9 +51,15 @@
         <!-- main begins with most of content here  -->
         <br>
         <main>
+            <section>
+                <ol class="breadcrumb">
+                    <li class="active">Home</li>
+                </ol>
+            </section>
             <section class="home flex">
                 <div>
-                <img src="images/1633942015426.jpg"/>
+                   <!-- <iframe src="images/ki.mp4" height="315"> </iframe> -->
+                   <img src="images/1633942015426.jpg"/>
                 </div>
                 <div>
                 <h1 class="section_title">hi, let's explore tech</h1>
@@ -111,9 +115,9 @@
         </main>
         <!-- main ends with most of content here  -->
         <br>
-        <!-- main ends with most of content here  -->
+        <!-- footer begins with most of content here  -->
         <footer>
-            <section id="about_us">
+            <section>
                 <h4 class="section_title">about us</h4>
                 <h5>Hultech</h5>
                 <p>hultech is a news tech website that provides you with all the lastest tech news</p>
@@ -121,42 +125,27 @@
             <section class="footer_body">
                 <article class="flex">
                     <div>
-                        <h5>Categories</h5>
                         <ul>
-                            <li>device reviews</li>
-                            <li>software</li>
-                            <li>space</li>
-                            <li>education</li>
-                            <li>finances</li>
-                            <li>games</li>
+                           <li><a href="#">home</a></li>
+                            <li><a href="feeds.html">feeds</a></li>
+                            <li><a href="./about_us.html">about us</a></li>
+                            <li><a href="#contact">contact</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h5>Categories</h5>
+                        <h5>our address</h5>
                         <address>
-                          121, Clear Water Bay Road<br>
-                          Clear Water Bay, Kowloon<br>
-                          HONG KONG<br>
-                          Tel.: +852 1234 5678<br>
-                          Fax: +852 8765 4321<br>
-                          Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                          121, alongside wankulukuku<br>
+                          Rubaga South, Kampala<br>
+                          UGANDA<br>
+                          <a href="tel:=256756150066"><i class="fa fa-phone"></i> +256 756150066</a><br/>
+                          <a href="mailto::hultech@info.com"><i class="fa fa-envelope"></i> hultech@info.com</a><br/>
                         </address>
                     </div>
                 </article>
                 <article class="flex">
-                    <div class="social_media">
-                        <h5>follow us</h5>
-                        <ul>
-                            <li>device reviews</li>
-                            <li>software</li>
-                            <li>space</li>
-                            <li>education</li>
-                            <li>finances</li>
-                            <li>games</li>
-                        </ul>
-                    </div>
                     <div class="contact_us" id="contact">
-                        <h5>Leave us a message. thank you</h5>
+                        <h5>Leave us a message.</h5>
                         <form>
                             <textarea rows="10" cols="40" placeholder="Your message"></textarea>
                             <br/>
@@ -164,8 +153,19 @@
                             <br/>
                             <input type="email" name="email" placeholder="example@email.com"/>
                             <br/>
-                            <button>send</button>
+                            <button>Send</button>
                         </form>
+                    </div>
+                    <div class="social_media">
+                        <h5>follow us</h5>
+                        <ol>
+                            <li><a href="#"><i class="fa fa-facebook"> </i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"> </i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin "> </i></a></li>
+                            <li><a href="#"><i class="fa fa-github"> </i></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"> </i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a> </li>
+                        </ol>
                     </div>
                 </article>
             </section>
@@ -177,6 +177,7 @@
         <!-- script javascripts external -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/fe1eb17f11.js" crossorigin="anonymous"></script>
+        <script defer src="./fontawesome/js/all.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
