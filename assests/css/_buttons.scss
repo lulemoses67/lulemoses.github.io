@@ -1,0 +1,56 @@
+
+@mixin button-bg($bg) {
+  background: $bg;
+  &:hover {
+    background:darken($bg,8%);
+    transition: all 0.3s ease;
+  }
+  &:active {
+    background:darken($bg,25%);
+  } 
+}
+.btn-group {
+    margin:0 auto;
+    padding: 10px 0;
+    text-align:center;
+  }
+.btn{
+ color:white;
+ text-decoration:none;
+ padding:8px 10px;
+ border-radius:3px;
+}
+.btn-green {
+   @include button-bg(#2ecc71);
+}
+
+.btn-blue {
+   @include button-bg(#3498db);
+}
+
+.btn-yellow{
+   @include button-bg(#f1c40f);
+}
+
+.btn-red {
+   @include button-bg(#e74c3c);
+}
+.btn-menu{
+  text-align: right;
+}
+button{
+  outline: none;
+  border: none;
+  color:white;
+  padding:8px 10px;
+  border-radius:3px;
+}
+.social-media{
+  ol{
+    padding: 30px 0;
+    li{
+      display: inline-block;
+      padding: 0 3px;
+    }
+  }
+}

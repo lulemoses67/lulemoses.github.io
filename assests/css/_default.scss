@@ -1,0 +1,44 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+}
+ul li, ol li{
+    list-style-type: none;
+}
+section{
+    padding: 60px 0;
+}
+li,i{
+    cursor: pointer;
+}
+p{
+    font-size: 20px;
+}
+.breadcrumb{
+    display: block;
+    background-color: azure;
+    ol{
+        display: inline-block;
+        li{
+            display: inline-block;
+            padding: 0 5px;
+        }
+    }
+}
+.address{
+    padding: 20px 0;
+    font-weight: 200;
+    address{
+        padding: 10px 0;
+    }
+}
+.copyright{
+    margin-top: 30px;
+    padding-top: 30px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiora</title>
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./assests/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-lg-2">
+                    <h1 class="logo">hultech</h1>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="form-search">
+                        <form>
+                            <input type="search" name="search_box" id="search_box">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-6">
+                    <ol class="navbar" id="nav">
+                        <li class="navbar-item"><a href="#" class="btn btn-yellow">GET STARTED</a></li>
+                    </ol>
+                    <a href="#" class="btn btn-menu"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="col-md-6">
+                        <h1>hultech</h1>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn-menu"><i class="fa fa-close"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <ol class="navbar" id="nav">
+                        <li><a href="#" class="btn btn-yellow">GET STARTED</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </aside><br/>
+    <script id="nav-template" type="text/x-handlebars-template">
+        {{#each navs}}
+            <li class="navbar-item"><a href="{{navLink}}"><i class="{{classIcon}}"></i><br/>{{navName}}</a></li>
+        {{/each}}
+    </script>
+    <main>
+        <section class="banner-welcome">
+            <div class="banner-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <span class="title">hi, Welcome to hultech</span>
+                            <span class="sub-title">let's explore tech</span>
+                        </div>
+                        <div class="col">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-yellow">GET STARTED</a>
+                                <a href="#" class="btn btn-yellow">About Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="top-blog">
+            <div class="container">
+                <h4 class="section-title">top stories</h4>
+                <div class="row align-tem">
+                    <div class="carousel">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/iphone12.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/mars.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/win11.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recent-blog">
+            <div class="container">
+                <h4 class="section-title">recent stories</h4>
+                <div class="row align-tem">
+                    <div class="carousel">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/iphone12.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/mars.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/win11.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recent-blog">
+            <div class="container">
+                <h4 class="section-title">Devices</h4>
+                <div class="row align-tem">
+                    <div class="carousel">
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/iphone12.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/mars.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-4">
+                            <div class="carousel-item">
+                                <a href="#">
+                                    <img src="./assests/images/win11.jpg"/>
+                                    <h3 class="recent_post">Iphone 13 reviews</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <h2>Hultech</h2>
+                        <p>hultech is a news tech website that provides you with all the lastest tech news</p>
+                        <br>
+                        <ul class="navbar"></ul>
+                        <br>
+                        <div class="address">
+                            <h5>our address</h5>
+                            <address>
+                              121, alongside wankulukuku<br>
+                              Rubaga South, Kampala<br>
+                              UGANDA<br>
+                              <a href="tel:=256756150066"><i class="fa fa-phone"></i> +256 756150066</a><br/>
+                              <a href="mailto::hultech@info.com"><i class="fa fa-envelope"></i> hultech@info.com</a><br/>
+                            </address>
+                        </div>
+                        <div class="social-media">
+                            <h5>follow us</h5>
+                            <ol>
+                                <li><a href="#"><i class="fa fa-facebook fa-lg"> </i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-lg"> </i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin fa-lg"> </i></a></li>
+                                <li><a href="#"><i class="fa fa-github fa-lg"> </i></a></li>
+                                <li><a href="#"><i class="fa fa-envelope fa-lg"> </i></a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <form class="form">
+                            <h4>contact us</h4>
+                            <div class="form-item">
+                                <span>Full Name</span>
+                                <input type="text" name="fullName" id="">
+                            </div>
+                            <div class="form-item">
+                                <span>Email</span>
+                                <input type="email" name="email" id="">
+                            </div>
+                            <div class="form-item">
+                                <span>Your message</span>
+                                <textarea rows="8" placeholder="Your message here..." name="message"></textarea>
+                            </div>
+                            <div class="form-item">
+                                <button class="btn-green">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&copy; hultech since 2020|2021</p>
+        </div>
+    </footer>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./assests/js/scripts.js"></script>
+</body>
+</html>
