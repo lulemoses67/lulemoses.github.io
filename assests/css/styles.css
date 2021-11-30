@@ -344,8 +344,6 @@ button {
 .form {
   margin: 20px auto;
   padding: 25px 0;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
 }
 .form .form-item {
   padding: 5px 0;
@@ -359,9 +357,9 @@ button {
 .form .form-item input, .form .form-item textarea {
   outline: none;
   border: none;
-  padding: 10px 2px;
+  padding: 10px 5px;
   border: 1px solid lightgrey;
-  width: 99%;
+  width: 90%;
   font-size: 18px;
 }
 
