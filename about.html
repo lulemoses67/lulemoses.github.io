@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Lule moses" />
+    <meta name="title" content="Hultech" />
+    <meta name="description" content="Hultech is a news website that provide with all the lastest technology and science news,research and innovations from the all world."/>
+    <meta name="keywords" content="news,tech,programming,technology,tech uganda,tech resource,lulemoses,hultech" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiora</title>
+    <title>Hultech</title>
+    <!-- css files-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./assests/css/styles.css">
 </head>
 <body>
+    <!--header-->
     <header>
         <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-lg-2">
-                    <h1 class="logo">hultech</h1>
+            <nav>
+                <h1>Hultech</h1>
+                <div class="form">
+                    <form>
+                        <input type="search" name="" id="" placeholder="Enter your search">
+                    </form>
                 </div>
-                <div class="col-md-5 col-lg-4">
-                    <div class="form-search">
-                        <form>
-                            <input type="search" name="search_box" id="search_box">
-                        </form>
-                    </div>
+                <ol class="navbar navbar-top"></ol>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-yellow">GET STARTED</a>
                 </div>
-                <div class="col-md-2 col-lg-6">
-                    <ol class="navbar" id="nav">
-                        <li class="navbar-item"><a href="#" class="btn btn-yellow">GET STARTED</a></li>
-                    </ol>
-                    <a href="#" class="btn btn-menu"><i class="fa fa-bars"></i></a>
-                </div>
-            </div>
+                <i class="fa fa-bars btn-menu"></i>
+            </nav>
         </div>
     </header>
     <aside>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="col-md-6">
+                    <div class="col-md-10">
                         <h1>hultech</h1>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-2">
                         <a class="btn-menu"><i class="fa fa-close"></i></a>
                     </div>
                 </div>
                 <div class="col">
-                    <ol class="navbar" id="nav">
-                        <li><a href="#" class="btn btn-yellow">GET STARTED</a></li>
-                    </ol>
+                    <ul class="navbar"></ul>
                 </div>
             </div>
         </div>
     </aside><br/>
-    <script id="nav-template" type="text/x-handlebars-template">
-        {{#each navs}}
-            <li class="navbar-item"><a href="{{navLink}}"><i class="{{classIcon}}"></i><br/>{{navName}}</a></li>
-        {{/each}}
-    </script>
+    <!-- main-->
     <main>
         <div class="breadcrumb">
             <div class="container">
@@ -66,98 +61,61 @@
                 </ol>
             </div>
         </div>
-        <section>
+        <section class="abous-us">
             <div class="container">
-                <h4 class="section-title">about hultech</h4>
+                <h4 class="section-title">About us</h4>
                 <div class="row">
-                    <div>
-                        <h1>hultech</h1>
-                    </div>
-                    <div>
-                        <p>Hultech is a news website that provide with all the lastest technology and science news,research and innovations from the all universe.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h4 class="section-title">our mission</h4>
-                <div class="row">
-                    <h2>let's explore tech</h2>
-                </div>
-            </div>
-        </section>
-        <section class="blogs">
-            <div class="container">
-                <h4 class="section-title">categories</h4>
-                <div class="row">
-                    <ul>
-                        <li>
-                            <a href="./index.html">
-                                <h3>Devices reviews</h3>
-                                <p class="details">get all the lastest information about your favorites devices and knowing how to perform different tasks.from specs to price we got you covered</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./index.html">
-                                <h3>Space Tech</h3>
-                                <p class="details">get all the lastest information about our new home from earth mars and other planets</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h4 class="section-title">about author</h4>
-                <div class="row">
-                    <div class="about-card">
-                        <div class="about-header">
-                            <h2>Lule Moses</h2>
-                            <em>CEO, Founder and developer</em>
+                    <div class="row">
+                        <div>
+                            <h1>hultech</h1>
                         </div>
-                        <div class="about-body">
-                            <div class="col-lg-6">
-                                <p>I am a self-taught programmer, i started by learning the foundations of programming with HTML, CSS and JavaScript. And after understanding the basics , i decided to take Web development as my first specialisation as a programmer and currently am a front-end developer.</p> 
-                                <p>Currently, i create websites and host them on free web hosting platforms like github-pages and i share my work to my friends and on my social media accounts for reviews. Though my websites are not yet published but i always challenge myself to do the best. I have  created full website templates for  blogsites, real estates services and selling websites. I saved all my projects on github repository @lulemoses67. This has given me a real work experience mostly on how work is done and mostly remote.
-                                </p>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="img">
-                                    <img src="./assests/images/1632671838127.jpg" alt="moses"/>
+                        <div>
+                            <p>Hultech is a news website that provide with all the lastest technology and science news,research and innovations from the all universe.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <div class="row">
+                              <div class="col-md-12 col-lg-12">
+                                <div class="our-team">
+                                  <div class="picture">
+                                    <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                                  </div>
+                                  <div class="team-content">
+                                    <h3 class="name">Michele Miller</h3>
+                                    <h4 class="title">Web Developer</h4>
+                                    <p>hhjgb hnghgjughghg vcgghnfhm bff</p>
+                                  </div>
+                                  <ul class="social">
+                                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+                                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+                                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                                    <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                                  </ul>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-lg-12">
-                                <div class="social-media">
-                                    <h5>follow us</h5>
-                                    <ol>
-                                        <li><a href="#"><i class="fa fa-facebook fa-lg"> </i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter fa-lg"> </i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin fa-lg"> </i></a></li>
-                                        <li><a href="#"><i class="fa fa-github fa-lg"> </i></a></li>
-                                        <li><a href="#"><i class="fa fa-envelope fa-lg"> </i></a></li>
-                                    </ol>
-                                </div>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!--footer-->
     <footer>
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <h2>Hultech</h2>
-                        <p>hultech is a news tech website that provides you with all the lastest tech news</p>
-                        <br>
+                    <div class="col">
+                        <h1 class="title">Hultech</h1>
+                        <p>Hultech is a news website that provide with all the lastest technology and science news,research and innovations from the all universe.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-body">
                         <ul class="navbar"></ul>
-                        <br>
                         <div class="address">
-                            <h5>our address</h5>
+                            <h4 class="section-title">our address</h4>
                             <address>
                               121, alongside wankulukuku<br>
                               Rubaga South, Kampala<br>
@@ -167,7 +125,7 @@
                             </address>
                         </div>
                         <div class="social-media">
-                            <h5>follow us</h5>
+                            <h4 class="section-title">follow us</h4>
                             <ol>
                                 <li><a href="#"><i class="fa fa-facebook fa-lg"> </i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter fa-lg"> </i></a></li>
@@ -177,35 +135,24 @@
                             </ol>
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6">
-                        <form class="form">
-                            <h4>contact us</h4>
-                            <div class="form-item">
-                                <span>Full Name</span>
-                                <input type="text" name="fullName" id="">
-                            </div>
-                            <div class="form-item">
-                                <span>Email</span>
-                                <input type="email" name="email" id="">
-                            </div>
-                            <div class="form-item">
-                                <span>Your message</span>
-                                <textarea rows="8" placeholder="Your message here..." name="message"></textarea>
-                            </div>
-                            <div class="form-item">
-                                <button class="btn-green">submit</button>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
         </section>
         <div class="copyright">
-            <p>&copy; hultech since 2020|2021</p>
+            <div class="container">
+                <p> &copy; Copyright Hultech 2020 | All Rights Reserved </p>
+            </div>
         </div>
     </footer>
+    <!-- js files-->
+    <script id="nav-template" type="text/x-handlebars-template">
+        {{#each navs}}
+            <li class="nav-item"><a href="{{navLink}}"><i class="{{classIcon}}"></i><br/>{{navName}}</a></li>
+        {{/each}}
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/handlebars/dist/handlebars.js"></script>
     <script src="./assests/js/scripts.js"></script>
 </body>

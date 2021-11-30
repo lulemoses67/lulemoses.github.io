@@ -1,0 +1,13 @@
+@mixin box-shadow {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+}
+@mixin set-bg-color($bg-color,$text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+}
+@mixin d-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+@mixins mCq()
