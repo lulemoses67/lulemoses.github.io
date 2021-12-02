@@ -445,6 +445,7 @@ button {
   color: #fafafa;
 }
 
+@mixins mCq();
 form {
   margin: 0;
   width: 100%;
@@ -460,6 +461,68 @@ form input::placeholder {
 }
 form input::placeholder {
   padding-left: 10px;
+}
+
+.form-body {
+  background-color: midnightblue;
+  color: white;
+}
+
+.form-container {
+  margin: 20px;
+  padding: 15px;
+}
+.form-container .input-cnt {
+  display: flex;
+  /* display the icon and the input in a line */
+  margin-bottom: 15px;
+}
+.form-container .input-cnt:last-child {
+  margin-bottom: 0px;
+}
+.form-container .input-cnt i {
+  min-width: 40px;
+  /* set a minimum width for the icon */
+  padding: 10px;
+  /* make sure the icon is centered vertically */
+  text-align: center;
+  /* horizontally center the icon */
+  background: lightgrey;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: #0076ff;
+}
+.form-container .input-cnt:hover i {
+  background: #0076ff;
+  color: white;
+}
+.form-container .input-cnt input[type=text], .form-container .input-cnt textarea {
+  outline: none;
+  border: 1px solid #0076ff;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 100%;
+}
+.form-container .input-cnt input[type=submit] {
+  border: 2px solid #0076ff;
+  border-radius: 20px;
+  outline: none;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 105%;
+  padding: 8px;
+  color: #0076ff;
+  background: white;
+  transition-duration: 0.5s;
+}
+.form-container .input-cnt input[type=submit]:hover {
+  color: white;
+  background: #0076ff;
+}
+.form-container .textarea-icon {
+  padding: 60px 10px !important;
+  /* top and bottom paddings are set to 60px */
 }
 
 @mixins mCq();
