@@ -50,6 +50,18 @@ p {
   padding: 10px 0;
 }
 
+.content-title {
+  padding: 15px 0;
+  color: midnightblue;
+}
+
+#googleMap {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
 html, body, header, aside, main, footer, div, section, article {
   box-sizing: border-box;
 }
@@ -177,6 +189,7 @@ html, body, header, aside, main, footer, div, section, article {
     width: 80%;
   }
 }
+@mixins mCq();
 .card {
   margin: 10px;
   border-radius: 1em;
@@ -200,12 +213,15 @@ html, body, header, aside, main, footer, div, section, article {
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 30px;
-  background-color: #f7f5ec;
+  background-color: white;
   text-align: center;
   overflow: hidden;
   position: relative;
 }
-
+.our-team p {
+  padding: 10px;
+  display: none;
+}
 .our-team .picture {
   display: inline-block;
   height: 130px;
@@ -214,8 +230,14 @@ html, body, header, aside, main, footer, div, section, article {
   z-index: 1;
   position: relative;
 }
-
-.our-team .picture::before {
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+.our-team .picture:before {
   content: "";
   width: 100%;
   height: 0;
@@ -229,12 +251,13 @@ html, body, header, aside, main, footer, div, section, article {
   transform: scale(3);
   transition: all 0.3s linear 0s;
 }
-
+.our-team:hover P {
+  display: block;
+}
 .our-team:hover .picture::before {
   height: 100%;
 }
-
-.our-team .picture::after {
+.our-team:hover .picture::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -245,46 +268,30 @@ html, body, header, aside, main, footer, div, section, article {
   left: 0;
   z-index: -1;
 }
-
-.our-team .picture img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  transform: scale(1);
-  transition: all 0.9s ease 0s;
-}
-
 .our-team:hover .picture img {
   box-shadow: 0 0 0 14px #f7f5ec;
   transform: scale(0.7);
 }
-
+.our-team:hover .social {
+  bottom: 0;
+}
 .our-team .title {
   display: block;
   font-size: 15px;
   color: #4e5052;
   text-transform: capitalize;
 }
-
 .our-team .social {
   width: 100%;
-  padding: 0;
-  margin: 0;
   background-color: #1369ce;
   position: absolute;
   bottom: -100px;
   left: 0;
   transition: all 0.5s ease 0s;
 }
-
-.our-team:hover .social {
-  bottom: 0;
-}
-
 .our-team .social li {
   display: inline-block;
 }
-
 .our-team .social li a {
   display: block;
   padding: 10px;
@@ -293,10 +300,41 @@ html, body, header, aside, main, footer, div, section, article {
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
-
 .our-team .social li a:hover {
+  background-color: white;
   color: #1369ce;
-  background-color: #f7f5ec;
+}
+
+.accordion input[type=radio] {
+  display: none;
+}
+.accordion label {
+  display: block;
+  padding: 10px;
+  font-size: large;
+  border-bottom: 1px solid black;
+  color: white;
+  background: #0076ff;
+  z-index: 2;
+  /* put it above the accordion content */
+}
+.accordion:last-child label, .accordion:last-child .accordion-content {
+  border: none;
+}
+.accordion .accordion-content {
+  border-bottom: 1px solid black;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+.accordion input:checked ~ .accordion-content {
+  padding: 30px;
+  opacity: 1;
+  max-height: 500px;
+  z-index: 1;
 }
 
 .btn-group {
@@ -542,7 +580,7 @@ footer .navbar .fa {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 600px) {
   .footer-body {

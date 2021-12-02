@@ -34,5 +34,6 @@ $(function() {
      var navData    = template(data);
      // put the rendered template into the DOM
      $('.navbar').prepend(navData);
- 
+
+     
 });
