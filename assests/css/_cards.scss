@@ -17,6 +17,14 @@
     padding: 10px;
     margin-top: auto;
   }
+  p{
+    display: none;
+  }
+  &:hover{
+    p{
+      display: block;
+    }
+  }
 }
 
 .our-team {

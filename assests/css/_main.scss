@@ -64,14 +64,13 @@ main{
     margin-top: 60px;
     .hero{
         padding: 100px 0;
-        background-image: url('../images/king.jpg');
+        background-image: url('https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?cs=srgb&dl=pexels-hasan-albari-1229861.jpg&fm=jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
         color: floralwhite;
         .title,p{
             display: block;
-            text-transform: capitalize;
             font-size: 28px;
         }
         .title{
