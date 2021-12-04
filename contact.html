@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hultech</title>
     <!-- css files-->
+    <link rel="icon" href="./assests/images/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="./assests/css/styles.css">
@@ -108,16 +109,25 @@
                     </div>
                     <div class="col-lg-8">
                         <h2 class="content-title">Map of our Location</h2>
-                        <div id="googleMap"></div>
+                        <div id="map"></div>
                         <script>
-                            function myMap() {
-                            var mapProp= {
-                              center:new google.maps.LatLng(51.508742,-0.120850),
-                              zoom:5,
-                            };
-                            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                            // Initialize and add the map
+                            function initMap() {
+                              // The location of kampala
+                              const myLocation = { lat: 0.347596, lng: 32.582520 };
+                              // The map, centered at myLocation
+                              const map = new google.maps.Map(document.getElementById("map"), {
+                                zoom: 4,
+                                center: myLocation,
+                              });
+                              // The marker, positioned at myLocation
+                              const marker = new google.maps.Marker({
+                                position: myLocation,
+                                map: map,
+                              });
                             }
-                        </script>
+                          </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi8wlSIcPrqOTpNBs1A0QiD5cq5E4WsVY=&callback=initMap"></script>
                     </div>
                 </div>
             </div>
@@ -176,7 +186,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./node_modules/jquery/dist/jquery.js"></script>
     <script src="./node_modules/handlebars/dist/handlebars.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
     <script src="./assests/js/index.js"></script>
 </body>
 </html>
