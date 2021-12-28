@@ -3,6 +3,9 @@ $(function() {
     $('.btn-menu').click(function () {
         $('aside').toggle();
     });
+    $('aside').click(function (){
+      $('aside').hide();
+    });
     // am using handlebars for templating
     // get the source code for our template
     // and compile it
@@ -10,25 +13,29 @@ $(function() {
     var template = Handlebars.compile(source);
     var data = {navs:[
         {
-          navName: "home",
-          classIcon: "fa fa-home", 
+          navName: "home", 
           navLink: "index.html", 
           },
         {
-          navName:"feeds",
-          classIcon:"fa fa-feed", 
-          navLink: "feed.html", 
+          navName:"work", 
+          navLink: "#work", 
           }, 
         {
           navName:"about us",
-          classIcon:"fa fa-address-card",
-          navLink: "about.html", 
+          navLink: "#about", 
           }, 
         {
-          navName:"contact",
-          classIcon:"fa fa-envelope",
-          navLink: "contact.html", 
+          navName:"My blog",
+          navLink: "https://hultechnews.blogspot.com/",
           },
+        {
+          navName:"Hire",
+          navLink: "#hire",
+          },
+        {
+          navName:"contact",
+          navLink: "#contact",
+         }
         ]};
      // render the data into the template
      var navData    = template(data);
@@ -37,3 +44,4 @@ $(function() {
 
      
 });
+ 
