@@ -1,7 +1,7 @@
 $(function() {
     // navbar
     $('.btn-menu').click(function () {
-        $('aside').toggle();
+        $('aside').fadeToggle();
     });
     $('aside').click(function (){
       $('aside').hide();

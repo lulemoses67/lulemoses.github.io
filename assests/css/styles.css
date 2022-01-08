@@ -237,35 +237,6 @@ p {
   align-items: center;
 }
 
-.about-card {
-  padding: 40px;
-}
-.about-card img {
-  margin: auto;
-  width: 80%;
-  border-radius: 50%;
-}
-.about-card li {
-  padding: 12px 0;
-  font-size: 16px;
-}
-.about-card li span {
-  padding-left: 10px;
-}
-.about-card p {
-  padding: 0 20px;
-  font-weight: 200;
-  color: gray;
-}
-@media only screen and (max-width: 769px) {
-  .about-card {
-    padding: 20px 0;
-  }
-  .about-card p {
-    padding: 20px 0;
-  }
-}
-
 .skills {
   display: flex;
   flex-direction: column;
@@ -444,6 +415,50 @@ p {
 .grid .five {
   grid-column: 1/5;
   grid-row: 4/6;
+}
+
+.about-preview .details {
+  font-weight: 200;
+  color: gray;
+}
+.about-preview img {
+  width: 50%;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 769px) {
+  .about-preview .body {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .about-preview {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(minmax(auto));
+    grid-gap: 20px;
+    transform: scale(0.9, 0.9);
+  }
+  .about-preview .body {
+    grid-column: 1/3;
+  }
+  .about-preview .body ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(minmax(auto));
+    grid-gap: 10px;
+    padding-top: 20px;
+  }
+  .about-preview .body ul li {
+    grid-column: 1/2;
+  }
+  .about-preview .body ul li:nth-child(even) {
+    grid-column: 2/5;
+  }
+  .about-preview .details {
+    display: block;
+    grid-column: 3/13;
+  }
 }
 
 .d-flex {
