@@ -1,20 +1,24 @@
 {
   "name": "hul",
   "version": "1.0.0",
-  "description": "front-work",
+  "description": "personal website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
-    "compile:sass": "sass ./assests/css/styles.scss ./assests/css/styles.css -w"
+    "sass": "sass ./assets/css/styles.scss ./assets/css/styles.css -w"
   },
+  "keywords": [
+    "lule",
+    "moses"
+  ],
   "author": "lule moses",
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "handlebars": "^4.7.7",
     "jquery": "^3.6.0",
-    "sass": "^1.43.4"
+    "sass": "^1.47.0"
   },
   "devDependencies": {
     "lite-server": "^2.6.1"

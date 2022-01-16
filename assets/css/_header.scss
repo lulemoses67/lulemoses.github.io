@@ -1,0 +1,46 @@
+@import "mixin";
+//header
+header{
+    position: fixed;
+    @include dark-theme;
+    @include box-shadow;
+    font-size: 80%;
+    z-index: 1000;
+}
+nav{
+    @include grid-container (12); 
+    align-items: center;
+    .btn-menu{justify-self: flex-end;}
+    #navBar{
+        display: none;
+        text-transform: uppercase;
+    }
+    @include respond (mobile) {
+        .logo{ grid-column: 1/12;}
+        #navBar{
+            height: 90vh;
+            grid-column: 1/13;
+            grid-row: 2;
+        }
+        .nav-bar{
+            height: 100%;
+            text-align: center;
+            li{padding: 30px;}
+            @include light-theme;
+        }
+    }
+    @include respond (laptop) {
+        .logo{grid-column: 1/3;}
+        .btn-menu{display: none;}
+        #navBar{
+            display: block;
+            grid-column: 3/13;
+            grid-row-start: 1;
+            justify-self: flex-end;
+        }
+        .nav-bar{
+            @include grid-container (6);
+            li:last-child{justify-self: flex-end;}
+        }
+    }
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--meta data-->
+    <!--meta data-->
   <meta name="author" content="Lule moses" />
   <meta name="title" content="Lule Moses" />
   <meta name="description" content="Front-end developer"/>
@@ -24,272 +24,214 @@
   <link rel="icon" type="image/png" href="./assests/images/CartoonAvatar1641242084019.png"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="./assests/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-  <!-- header-->
-  
-  <header>
-    <div class="container d-flex">
-        <h1 class="logo">Lule Moses</h1>
-        <nav>
-          <ul class="navbar d-flex"></ul>
-        </nav>
-        <i class="fa fa-bars btn-menu"></i>
-    </div>
-  </header>
-  <!--/ header-->
-
-  <!--aside-->
-  <aside>
-    <i class="fa fa-close btn-menu"></i>
-    <nav>
-      <ul class="navbar"></ul>
-    </nav>
-  </aside><br>
-  <!-- / aside-->
-
-  <!--main-->
-  <main>
-    <article class="hero">
-      <div class="container">
-        <img src="./assests/images/CartoonAvatar1641242084019.png" alt="CartoonAvatar">
-        <h1 class="title">Lule Moses</h1>
-        <h2>Front-end Developer</h2>
-        <p>Hi , am Moses a front-end developer with one year experience , I develop and design webpages, websites and web applications using HTML, CSS with SASS, JAVASCRIPT and PHP with my SQL.</p>
-      </div>
-    </article>
-
-    <!--about-->
-    <section id="about">
-      <div class="container">
-        <h3 class="section-title">About me</h3>
-        <div class="section-content">
-          <div class="about-preview">
+    <!-- header-->
+    <header>
+        <div class="container">
+            <nav>
+                <h1 class="logo"></h1>
+                <div id="navBar"></div>
+                <i class="fa fa-bars fa-lg btn-menu"></i>
+            </nav>
+        </div>
+    </header><br>
+    <!--/ header-->
+    <!--main-->
+    <main>
+        <!--hero-->
+        <section id="hero">
+            <div class="container">
+                <div class="hero-banner"></div>
+            </div>
+        </section>
+        <!--hero-->
+        <!--about-->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="row-content" id="aboutSection"></div>
+                </div>
+            </div>
+        </section>
+        <!--/about-->
+        <!-- skills -->
+        <section id="skills">
+            <div class="container">
+                <div class="row">
+                    <h2 class="row-title">Skills</h2>
+                    <div class="row-content">
+                        <div class="skills-card">
+                            <div class="front">
+                                <h3 class="grid-title">Front-end</h3>
+                                <ul class="basics">
+                                    <li class="grid-title"><h4>Basics</h4></li>
+                                    <li>html</li>
+                                    <li>css</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <ul class="design">
+                                    <li class="grid-title"><h4>Styles</h4></li>
+                                    <li>bootstrap</li>
+                                    <li>scss</li>
+                                    <li>reactstrap</li>
+                                </ul>
+                                <ul class="framework">
+                                    <li class="grid-title"><h4>Frameworks / Libraries</h4></li>
+                                    <li>jquery</li>
+                                    <li>handlebars</li>
+                                    <li>reacts</li>
+                                </ul>
+                            </div>
+                            <ul class="back">
+                                <li class="grid-title"><h3>Back-end</h3></li>
+                                <li>node.js</li>
+                                <li>php</li>
+                                <li>mysql</li>
+                                <li>json api</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/skills-->
+        <!--work-->
+        <section id="work">
+            <div class="container">
+                <div class="row">
+                    <h2 class="row-title">Work / Projects</h2>
+                    <div class="row-content" id="workSection"></div>
+                </div>
+            </div>
+        </section>
+        <!--/work-->
+    </main>
+    <!--/ main-->
+    <!-- footer-->
+    <footer>
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="row-content">
+                        <div class="contact-card">
+                            <form>
+                                <h1 class="title">Send Message</h1>
+                                <div class="input">
+                                    <input type="text" name="fullname" id="" placeholder="Fullname">
+                                </div>
+                                <div class="input">
+                                    <input type="email" name="email" id="" placeholder="Email">
+                                </div>
+                                <div class="input">
+                                    <input type="text" name="subject" id="" placeholder="Subject">
+                                </div>
+                                <div class="input">
+                                    <textarea name="details" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="submit" class="btn-blue">Send Message</button>
+                                </div>
+                            </form>
+                            <div class="body">
+                                <h1 class="title">Get in Touch</h1>
+                                <P>Hi , am Moses a front-end developer with one year experience , I develop and design webpages, websites and web applications using HTML, CSS with SASS, JAVASCRIPT and PHP with my SQL.</P>
+                                <ul>
+                                    <li><i class="fa fa-map"></i> <span>KAMPALA, UGANDA</span></li>
+                                    <li><i class="fa fa-phone"></i> <span>(617) 557-0089</span></li>
+                                    <li><i class="fa fa-envelope"></i> <span>lulemoses67@gmail.com</span></li>
+                                </ul>
+                                <div class="social-link">
+                                    <a href=""><i class="fa fa-facebook fa-lg"></i></a>
+                                    <a href=""><i class="fa fa-instagram fa-lg"></i></a>
+                                    <a href=""><i class="fa fa-twitter fa-lg"></i></a>
+                                    <a href=""><i class="fa fa-linkedin fa-lg"></i></a>
+                                    <a href=""><i class="fa fa-github fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="copyright">
+            <p>&copy; Copyright Lule Moses. All Rights Reserved</p>
+            <p>Designed by Lule Moses</p>
+        </section>
+    </footer>
+    <!--/ footer-->
+    <!-- hero template-->
+    <script id="hero-template" type="text/x-handlebars-template">
+        <div class="hero-body">
+            <img src="{{img}}" alt="{{img}}"/>
+            <h3>{{profile}}</h3>
+            <p>{{details}}</p>
+        </div>
+    </script>
+    <!-- /hero template-->
+    <!-- Nav template-->
+    <script id="nav-template" type="text/x-handlebars-template">
+        <ul class="nav-bar">
+            {{#each navs}}
+                <li><a href="{{navLink}}">{{navName}}</a></li>
+            {{/each}}
+            <li><a href="" class="btn btn-green">hire</a></li>
+        </ul>
+    </script>
+    <!--/ Nav template-->
+    <!-- About-card template-->
+    <script id="about-template" type="text/x-handlebars-template">
+        <div class="about-preview">
             <div class="body">
-              <img src="./assests/images/CartoonAvatar1641242084019.png" alt="">
-              <ul>
-                <li><b>Name</b></li>
-                <li>Lule Moses</li>
-                <li><b>Profile</b></li>
-                <li>Front-end developer</li>
-                <li><b>Email</b></li>
-                <li><a href="mailto:lulemoses67@gmail.com">lulemoses67@gmail.com</a></li>
-                <li><b>Phone</b></li>
-                <li><a href="tel:+256756150066">+256756150066</a></li>
-                <li><b>Github</b></li>
-                <li><a href="https://github.com/lulemoses67">lulemoses67</a></li>
-              </ul>
+                <img src="{{img}}" alt="{{img}}">
+                <ul>
+                    <li>Name: <span>{{name}}</span></li>
+                    <li>Profile: <span>{{profile}}</span></li>
+                    <li>Email: <span><a href="mailto:{{email}}">{{email}}</a></span></li>
+                    <li>Phone: <span><a href="tel:{{phone}}">{{phone}}</a></span></li>
+                </ul>
             </div>
             <div class="details">
-              <p>Hi , am Moses a front-end developer with one year experience , I develop and design webpages, websites and web applications using HTML, CSS with SASS, JAVASCRIPT and PHP with my SQL.
-                Am self-taught and I  started in 2019 by learning the foundation of programming with HTML, CSS and JavaScript from Duke University via Coursera .  Then I started creating and designing webpages like  a homepage, form pages  and some CSS cards. And when I understood the basics  I decided to take web development as my first tech specialization and learn more about it by taking more courses, readings and daily practice. And after sometime I enrolled for Responsive Web design from University of London via Coursera where I was introduced to more web development skills like bootstrap , jQuery and more JavaScript like handlebars.js . This also introduced me to front-end development and since then most of my work has been front-end.  And after that I decided to learn PHP and my SQL since a lot of websites are built using PHP. 
-                All that time I have been learning things and practicing them in my projects like personal website , personal blog and other projects saved on my GitHub repo.
-                Currently am still learning and getting more advanced knowledge about the programming languages I have learnt like now am enrolled to front-end development with Reacts from The University of Hong Kong and other internet resources as am working on some personal projects and looking for a break through.
-                After all that experience, I have developed some personal key skills in the subject like solving problems.
-                I intend to  become a full stack developer with time.
-                I love technology and I like talking about tech.
-                Thank you.                    
-              </p>
+                <h2>About Me</h2>
+                <p>{{description}}</p>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-    <!--/ about-->
-
-    <!--skills-->
-    <section id="skills">
-      <div class="container">
-        <h3 class="section-title">Skills</h3>
-        <div class="section-content">
-          <div class="grid">
-            <div class="one">
-              <h2>Front-end</h2>
-              <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVACSRIPT</li>
-                <li>JQUERY</li>
-                <li>REACT</li>
-              </ol>
+    </script>
+    <!--/ About-card template-->
+    <!--work card template-->
+    <script id="work-template" type="text/x-handlebars-template">
+        {{#each projects}}
+        <article class="card">
+            <div class="card-header">
+                <h1>{{project}}</h1>
+                <i class="fa fa-php fa-lg"></i>
             </div>
-            <div class="two">
-              <h2>Back-end</h2>
-              <ol class="d-flex">
-                <li>PHP</li>
-                <li>JAVACSRIPT</li>
-                <li>NODE JS</li>
-              </ol>
+            <div class="card-body">
+                <p>hi</p>
+                <ul>
+                    <li class="tag tag-blue">{{category}}</li>
+                    <li>
+                        <a href="{{view}}">
+                            <span class="tag tag-danger"><i class="fa fa-eye"></i> view</span>
+                        </a>
+                        <a href="{{code}}">
+                            <span class="tag tag-red"><i class="fa fa-code"></i> code</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="three">
-              <h2>Database</h2>
-              <ol>
-                <li>MYSQL</li>
-              </ol>
-            </div>
-            <div class="four">
-              <h2>UI/UX</h2>
-              <ol>
-                <li>Bootsrap</li>
-              </ol>
-            </div>
-            <div class="five">
-              <h2>Tools</h2>
-              <ol class="d-flex">
-                <li>Git</li>
-                <li>Github</li>
-                <li>Visual Studio</li>
-              </ol>
-            </div>
-          </div>
-    <!--/ skills-->
-
-    <!-- work-->
-    <section id="work">
-      <div class="container">
-        <h3 class="section-title">Work</h3>
-        <div class="section-content">
-          <div class="d-flex">
-            <i class="fa fa-arrow-left fa-lg carousel-btn"></i>
-            <div class="lastk"></div>
-            <i class="fa fa-arrow-right fa-lg carousel-btn"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ work-->
-
-    <!--hire-->
-    <section id="hire">
-      <div class="container">
-        <h2 class="section-title">Hire me</h2>
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="content">
-              <h3 class="content-title">Your Job offer</h3>
-              <div class="form-container">
-                <form action="#">
-                  <div class="input-cnt">
-                      <i>Job</i>
-                      <input type="text" placeholder="job title" name="name" />
-                   </div>
-                   <div class="input-cnt">
-                      <i>Company</i>
-                      <input type="text" placeholder="company" name="email" />
-                   </div>
-        
-                   <div class="input-cnt">
-                    <i>Location</i>
-                    <input type="text" placeholder="location" name="email" />
-                   </div>
-                   
-                   <div class="input-cnt">
-                      <i class="textarea-icon">details</i>
-                      <textarea  placeholder="Job description..." name="message"></textarea>
-                   </div>
-                   
-                   <div class="input-cnt">
-                      <input type="submit" />
-                   </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="content">
-              <h3 class="content-title">Why me ?</h3>
-              <p class="info">I love working as a team.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ hire-->
-  </main>
-  <!--/ main-->
-
-  <!--footer-->
-  <footer>
-    <!--contact-->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact me</h2>
-        <div class="content">
-          <h3 class="content-title">Leave me a message</h3>
-          <div class="form-container">
-            <form action="#">
-                <div class="input-cnt">
-                    <i class="fa fa-user"></i>
-                    <input type="text" placeholder="Name" name="name" />
-                 </div>
-                 <div class="input-cnt">
-                    <i class="fa fa-envelope"></i>
-                    <input type="text" placeholder="Email" name="email" />
-                 </div>
-                 
-                 <div class="input-cnt">
-                    <i class="fa fa-envelope textarea-icon"></i>
-                    <textarea  placeholder="Your message here..." name="message"></textarea>
-                 </div>
-                 
-                 <div class="input-cnt">
-                    <input type="submit" />
-                 </div>
-            </form>
-          </div>
-        </div>
-        <div class="content">
-          <h3 class="content-title">Follow me</h3>
-          <ol class="d-flex social-media">
-            <li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin fa-lg"></i></a></li>
-            <li><a href=""><i class="fab fa-github fa-lg"></i></a></li>
-            <li><a href=""><i class="fa fa-envelope fa-lg"></i></a></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-    <!--/ contact-->
-    <div class="container">
-      <p> &copy; Copyright Hultech 2020 | All Rights Reserved </p>
-    </div>
-  </footer>
-  <!--/ footer-->
-
-  <!--scripts-->
-  <script id="nav-template" type="text/x-handlebars-template">
-    {{#each navs}}
-    <li class="nav-item"><a href="{{navLink}}">{{navName}}</a></li>
-    {{/each}}
-  </script>
-  <script id="work-template" type="text/x-handlebars-template">
-    {{#each work}}
-      <div class="carousel">
-        <div>
-          <h3 class="title">{{position}}</h3>
-          <p>{{company}}</p>
-          <img src="./assests/images/{{companyLogo}}" alt="">
-          <p class="d-flex"><small>{{started}}</small><small>{{ended}}</small></p>
-        </div>
-        <div class="details">
-          <h4>Tasks</h4>
-          <ul>
-            {{#each task}}<li>{{this}}</li>{{/each}}
-            <li><a href="{{reference}}"><b>Reference</b></a></li>
-          </ul>
-        </div>
-      </div>
-    {{/each}}
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./node_modules/jquery/dist/jquery.js"></script>
-  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
-  <script src="./assests/js/index.js"></script>
-  <script src="./assests/js/templates.js"></script>
-  <!--/ scripts-->
-
+        </article>
+        {{/each}}
+    </script>
+    <!--/work card template-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./assets/js/dbTemplates.js"></script>
+    <script src="./assets/js/templates.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!--/ scripts-->
 </body>
 </html>
