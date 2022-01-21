@@ -14,14 +14,14 @@ const author = {
       code: "hh",
     },
     {
-      project : "Blogsite",
-      category: "Backend",
+      project : "Reacts Blog",
+      category: "Front-end",
       view : "lul",
       code: "hh"
     },
     {
-      project : "Blogsite",
-      category: "Backend",
+      project : "Portfolio",
+      category: "Front-end",
       view : "lul",
       code: "hh"
     }
