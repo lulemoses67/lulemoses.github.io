@@ -1,0 +1,14 @@
+@import "mixins";
+footer{
+    @include set-bg-color($primary,white);
+    p{
+        font-size: 1.2em;
+        font-weight: 300;
+    }
+    //font-size: 2em;
+    .copyright{
+        @include set-bg-color(rgb(255, 255, 255),rgb(0, 0, 0));
+        padding: 10px;
+        text-align: center;
+    }    
+}

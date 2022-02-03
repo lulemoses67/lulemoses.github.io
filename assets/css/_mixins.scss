@@ -1,24 +1,29 @@
-$primary : rgba(15, 79, 199, 0.897);
-$detail : lighten(rgb(71, 69, 69),8%);
+//Main colors
+$primary : #007bff;
+$detail : #6c757d;
+$warning : #ffc107;
+$danger : #dc3545;
+$success : #28a745;
+
+//Background mixins
 @mixin set-bg-color($bg-color,$text-color) {
     background-color: $bg-color;
     color: $text-color;
 }
-@mixin  light-theme {
-    @include set-bg-color(#fff,$primary);
-}
-@mixin dark-theme {
-    @include set-bg-color(rgba(10, 80, 209, 0.897),#fff);
-}
+
+// Grid mixins
 @mixin  grid-container ($grids) {
     display: grid;
     grid-template-columns: repeat($grids, 1fr);
     grid-template-rows: repeat(minmax(auto));
 }
-@mixin box-shadow {
-    box-shadow: 0 5px 15px rgb(195, 192, 192);
- }
 
+// Light box shadow
+@mixin box-shadow {
+    box-shadow:  1px 3px 5px rgba(0,0,0,0.1);
+ }
+ 
+// Media quries
 @mixin respond ($breakpoint) {
 
     @if $breakpoint==laptop {
@@ -36,10 +41,16 @@ $detail : lighten(rgb(71, 69, 69),8%);
 
 // button mixin
 @mixin button-bg($bg) {
+    color:white;
+    text-decoration:none;
+    padding:8px 10px;
+    border-radius:3px;
     background: $bg;
+    @include box-shadow;
     &:hover {
-      background:darken($bg,8%);
-      transition: all 0.3s ease;
+        border: 1px solid $bg;
+        color: $bg;
+        background-color: white;
     }
     &:active {
       background:darken($bg,25%);

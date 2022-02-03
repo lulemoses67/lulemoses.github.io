@@ -1,0 +1,38 @@
+@import "mixins";
+
+.tag{
+    display: inline-block;
+    padding: 5px;
+    transform: scale(0.6,0.6);
+    font-weight: 200;
+}
+.tag-primary{
+    @extend .tag;
+    @include set-bg-color($primary,white);
+}
+.tag-warning{
+    @extend .tag;
+    @include set-bg-color($warning,white);
+}
+.tag-success{
+    @extend .tag;
+    @include set-bg-color($success,white);
+}
+.tag-danger{
+    @extend .tag;
+    @include set-bg-color($danger,white);
+}
+.tag-detail{
+    @extend .tag;
+    @include set-bg-color($detail,white);
+}
+
+#buy{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    @include set-bg-color($success,white);
+    @include box-shadow;
+}

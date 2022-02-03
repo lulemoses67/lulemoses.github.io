@@ -1,0 +1,32 @@
+@import "mixins";
+// form
+form{
+    padding: 20px;
+    .form-element{
+        @include grid-container (4);
+        grid-gap: 5px;
+        font-weight: 200;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    label{
+        grid-column: 1/2;
+        align-self: flex-start;
+        padding: 10px;
+    }
+    input,textarea{
+        margin: 0;
+        grid-column: 2/5;
+        padding: 10px;
+        border: 1px solid rgba(179, 177, 177, 0.863);
+        border-radius: 5px;
+    }
+    .btn-group{
+        text-align: right;
+    }
+    @include respond (mobile) {
+        label{display: none;}
+        input,textarea{grid-column: 1/5;}
+    }
+}
+

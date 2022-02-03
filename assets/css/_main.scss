@@ -1,42 +1,34 @@
-@import "mixin";
-//main
-
+@import "mixins";
+main{
+    margin-top: 40px;
+}
 //hero
-.hero-banner{
-    @include grid-container (6);
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
-    height: 100vh;
-    h3,p{margin-top: 8px;}
-    img{
-        width: 25%;
-        border-radius: 50%;
-    }
-    h3{color: $primary;}
-    p{color: $detail;}
-    .hero-body{
-        grid-column: 1/7;
-        grid-row: 2;
-        text-align: center;
-    }
-
+#hero{
+    @include set-bg-color($primary,white);
+    text-align: center;
+    p{font-size: 2em;}
+    .row{ height: 80vh; }
 }
-#work{
-    @include set-bg-color(rgba(10, 80, 209, 0.02), black);
-    .row-content{
-        @include grid-container (3);
-        grid-gap: 10px;
-        @include respond (mobile) {
-            @include grid-container (1);
-        }
-    }
+//breadcrumbs
+.breadcrumbs{
+    display: flex;
+    padding: 10px;
+    font-size: 90%;
+    font-weight: 200;
+    @include set-bg-color(#e9ecef,#6c757d);
+    li{padding: 0 5px;}
 }
+//footer
 footer{
-    @include set-bg-color(rgba(11, 97, 255, 0.815),#fff);
-    .copyright{
-        text-align: center;
-        padding: 20px;
-        font-weight: bold;
-        @include set-bg-color(rgb(236, 230, 230),$primary)
+    @include set-bg-color($primary,white);
+    p{
+        font-size: 1.2em;
+        font-weight: 300;
     }
+    //font-size: 2em;
+    .copyright{
+        @include set-bg-color(rgb(255, 255, 255),rgb(0, 0, 0));
+        padding: 10px;
+        text-align: center;
+    }    
 }

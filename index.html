@@ -1,236 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--meta data-->
-  <meta name="author" content="Lule Moses" />
-  <meta name="title" content="lule moses" />
-  <meta name="description" content="Hi , am Lule Moses a Front-end developer with one year experience , I develop and design webpages, websites and web applications using HTML, CSS with SASS, JAVASCRIPT and PHP with my SQL."/>
-  <meta name="keywords" content="lulemoses,lulemoses, lule, moses, Hultech, web developer kampala, front-end developer,front-end developer uganda" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7QQ4DV6CL"></script>
-  <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Data-->
+    <title>Lule Moses</title>
+    <meta content="Hi , am a front-end developer, i design and develop awesome, responsive and effective websites and web applications using HTML, CSS, JAVASCRIPT, PHP, MYSQL and REACTS." name="description">
+    <meta content="lulemoses,lulemoses, lule, moses, Hultech, web developer kampala, front-end developer,front-end developer uganda" name="keywords">
 
-      gtag('config', 'G-C7QQ4DV6CL');
-  </script>
-  <!--page title-->
-  <title>Lule Moses</title>
-  <!--CSS FILES -->
-  <link rel="icon" type="image/png" href="./assests/images/CartoonAvatar1641242084019.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7QQ4DV6CL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+        gtag('config', 'G-C7QQ4DV6CL');
+    </script>
+
+    <!-- icon -->
+    <link href="assets/icons/CartoonAvatar1641242084019.png" rel="icon">
+    
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    
+    <!-- Fontawesome icons CSS Files -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    
+    <!-- =======================================================
+    * Template Name: Personal site
+    * Theme: Portfolio
+    * Year: 2022
+    * Author: Lule Moses
+    * License: Open Source
+    ======================================================== -->
 </head>
 <body>
-    <!-- header-->
+    <!-- ======= Header ======= -->
     <header>
         <div class="container">
-            <nav>
-                <h1 class="logo"></h1>
-                <div id="navBar"></div>
-                <i class="fa fa-bars fa-lg btn-menu"></i>
-            </nav>
+            <div class="row align-center">
+                 <div class="col-md-10 col-lg-3">
+                     <h1 class="logo">Lule Moses</h1>
+                 </div>
+                 <div class="col-md-2">
+                     <a class="btn-menu"><i class="fa fa-bars"></i></a>
+                 </div>
+                 <div class="col-md-12 col-lg-9">
+                     <nav>
+                         <ul class="nav-bars">
+                             <li class="nav-item"><a href="index.html">Home</a></li>
+                             <li class="nav-item"><a href="#about"> About</a></li>
+                             <li class="nav-item"><a href="#work"> Work</a></li>
+                             <li class="nav-item"><a href="#services">Services</a></li>
+                             <li class="nav-item"><a href="blogs.html">Blogs</a></li>
+                             <li class="nav-item  active"><a href="#contact">Contact</a></li>
+                             <li class="nav-item form"><a href="code.html" class="btn-primary">Projects</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+             </div>
         </div>
-    </header><br>
-    <!--/ header-->
-    <!--main-->
-    <main>
-        <!--hero-->
-        <section id="hero">
+     </header><br>
+     <!-- ======= /Header ======= -->
+     <!-- ======= Main ======= -->
+     <main>
+        <!-- ======= Hero ======= -->
+        <div id="hero">
             <div class="container">
-                <div class="hero-banner"></div>
+                <div class="row align-center">
+                    <div class="col-lg-12">
+                        <p id="lul"></p>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!--hero-->
-        <!--about-->
+        </div>
+        <!-- ======= /Hero ======= -->
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li>Home</li>
+                <li>/</li>
+                <li id="active"></li>
+            </ul>
+        </div>
+        <!-- ======= /Breadcrumbs ======= -->
+        <!-- ======= About ======= -->
         <section id="about">
             <div class="container">
-                <div class="row">
-                    <div class="row-content" id="aboutSection"></div>
+                <h3 class="section-title">About Me</h3>
+                <div>
+                    <div class="about-preview">
+                        <div class="body">
+                            <img src="assets\icons\IMG_20220110_175457_4~2.jpg" alt="">
+                            <ul>
+                                <li>Name: <span>Lule Moses</span></li>
+                                <li>Profile: <span>Front-end Developer</span></li>
+                                <li>Email: <span><a href="">lulemoses67@gmail.com</a></span></li>
+                                <li>Phone: <span><a href="">+256 756150066</a></span></li>
+                            </ul>
+                        </div>
+                        <div class="details">
+                            <p>Hi, am moses a front-end developer , i design and develop awesome, responsive and effective USER INTERFACE and USER EXPERIENCE for websites, web applications and mobile applications using SASS, JAVASCRIPT, BOOTSTRAP and REACTSTRAP for Reacts apps. I intend to become a full-stack with time and i been developing some databases appication in php and mysql , and have created some CRUDS and relational databases systems. I use PDO and like using the POST-REDIRECT-GET pattern, sessions, protect my programms from html injections as possible and understand the Model Controller and View Controller.I love technology, I like talking about tech and this why whenever am free i try to write on my blog . It's a tech news blog with a daily tech report www.hul-net.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--/about-->
-        <!-- skills -->
-        <section id="skills">
+        <!-- ======= /About ======= -->
+        <!-- ======= Skills ======= -->
+        <section>
             <div class="container">
-                <div class="row">
-                    <h2 class="row-title">Skills</h2>
-                    <div class="row-content">
-                        <div class="skills-card">
-                            <div class="front">
-                                <h3 class="grid-title">Front-end</h3>
-                                <ul class="basics">
-                                    <li class="grid-title"><h4>Basics</h4></li>
-                                    <li>html</li>
-                                    <li>css</li>
-                                    <li>JavaScript</li>
-                                </ul>
-                                <ul class="design">
-                                    <li class="grid-title"><h4>Styles</h4></li>
-                                    <li>bootstrap</li>
-                                    <li>scss</li>
-                                    <li>reactstrap</li>
-                                </ul>
-                                <ul class="framework">
-                                    <li class="grid-title"><h4>Frameworks / Libraries</h4></li>
-                                    <li>jquery</li>
-                                    <li>handlebars</li>
-                                    <li>reacts</li>
-                                </ul>
-                            </div>
-                            <ul class="back">
-                                <li class="grid-title"><h3>Back-end</h3></li>
-                                <li>node.js</li>
-                                <li>php</li>
-                                <li>mysql</li>
-                                <li>json api</li>
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-card">
+                    <div class="front">
+                        <h3 class="grid-title">Front-end</h3>
+                        <ul class="basics">
+                            <li class="grid-title"><h4>Basics</h4></li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <ul class="design">
+                            <li class="grid-title"><h4>Styles</h4></li>
+                            <li>bootstrap</li>
+                            <li>scss</li>
+                            <li>reactstrap</li>
+                        </ul>
+                        <ul class="framework">
+                            <li class="grid-title"><h4>Frameworks / Libraries</h4></li>
+                            <li>jquery</li>
+                            <li>handlebars</li>
+                            <li>reacts</li>
+                        </ul>
+                    </div>
+                    <ul class="back">
+                        <li class="grid-title"><h3>Back-end</h3></li>
+                        <li>javascript</li>
+                        <li>php</li>
+                        <li>mysql</li>
+                        <li>json api</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ======= /Skills ======= -->
+        <!-- ======= Service ======= -->
+        <section id="services">
+            <div class="container">
+                <h3 class="section-title">Services</h3>
+                <div class="blog-list row-content hul">
+                    <div class="service">
+                        <div class="circle">
+                            <i class="fa fa-paint-brush"></i>
+                        </div>
+                        <h3>UI/IX design</h3>
+                        <p>I design responsive, awesome and interactive interfaces</p>
+                    </div>
+                    <div class="service">
+                        <div class="circle">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Develop and deploy a full functioning website</p>
+                    </div>
+                    <div class="service">
+                        <div class="circle">
+                            <i class="fa fa-dashboard"></i>
+                        </div>
+                        <h3>Content Management</h3>
+                        <p>Managing web content and updating content</p>
+                    </div>
+                    <div class="service">
+                        <div class="circle">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <h3>SEO</h3>
+                        <p>Use Google console and use meta tags</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- ======= /Service ======= -->
+            <!-- ======= Work ======= -->
+            <section id="work">
+                <div class="container">
+                    <h3 class="section-title">Work / Projects</h3>
+                    <div class="works row-content">
+                        <div class="work">
+                            <h2>Fiora <span class="tag-primary">E-commerce</span></h2>
+                            <p>A website that deliveries you Fresh and healthy trees, plants, seeds, seedlings, and garden care services. Let's save the planet together.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>JS</li>
+                            </ul>
+                            <p>From : 2019/12/01 - To : 2022/02/22</p>
+                        </div>
+                        <div class="work">
+                            <h2>Hul-net <span class="tag-danger">Blog</span></h2>
+                            <p>A website that deliveries you Fresh and healthy trees, plants, seeds, seedlings, and garden care services. Let's save the planet together.</p>
+                            <ul>
+                                <li>React</li>
+                            </ul>
+                            <p>From : 2019/12/01 - To : 2022/02/22</p>
+                        </div>
+                        <div class="work">
+                            <h2>Personal Site <span class="tag-success">Portfolio</span></h2>
+                            <p>A website that deliveries you Fresh and healthy trees, plants, seeds, seedlings, and garden care services. Let's save the planet together.</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>JS</li>
+                            </ul>
+                            <p>From : 2019/12/01 - To : 2022/02/22</p>
+                        </div>
+                        <div class="work">
+                            <h2>Real Estates <span class="tag-primary">E-commerce</span></h2>
+                            <p>A website that deliveries you Fresh and healthy trees, plants, seeds, seedlings, and garden care services. Let's save the planet together.</p>
+                            <ul>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <p>From : 2019/12/01 - To : 2022/02/22</p>
+                        </div>
+                        <div class="work">
+                            <h2>CRUD <span class="tag-primary">Back-end</span></h2>
+                            <p>A website that deliveries you Fresh and healthy trees, plants, seeds, seedlings, and garden care services. Let's save the planet together.</p>
+                            <ul>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <p>From : 2019/12/01 - To : 2022/02/22</p>
+                        </div>
+                        <div class="work">
+                            <h2>CRUD <span class="tag-primary">Back-end</span></h2>
+                            <p>A website that deliveries you Fresh and healthy trees, plants, seeds, seedlings, and garden care services. Let's save the planet together.</p>
+                            <ul>
+                                <li>React</li>
+                            </ul>
+                            <p>From : 2019/12/01 - To : 2022/02/22</p>
+                            <ul>
+                                <li><i class="fa -fa-eye"></i> view</li>
+                                <li><i class="fa -fa-code"></i> code</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--/skills-->
-        <!--work-->
-        <section id="work">
-            <div class="container">
-                <div class="row">
-                    <h2 class="row-title">Work / Projects</h2>
-                    <div class="row-content" id="workSection"></div>
-                </div>
-            </div>
-        </section>
-        <!--/work-->
+            </section>
+            <!-- ======= /Work ======= -->
     </main>
-    <!--/ main-->
-    <!-- footer-->
+    <!-- ======= /Main ======= -->
+    <!-- ======= Footer ======= -->
     <footer>
+        <!-- ======= Contact ======= -->
         <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="row-content">
-                        <div class="contact-card">
-                            <form>
-                                <h1 class="title">Send Message</h1>
-                                <div class="input">
-                                    <input type="text" name="fullname" id="" placeholder="Fullname" required>
-                                </div>
-                                <div class="input">
-                                    <input type="email" name="email" id="" placeholder="Email" required>
-                                </div>
-                                <div class="input">
-                                    <input type="text" name="subject" id="" placeholder="Subject"required >
-                                </div>
-                                <div class="input">
-                                    <textarea name="details" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
-                                </div>
-                                <div class="btn-group">
-                                    <button type="submit" class="btn-blue">Send Message</button>
-                                </div>
-                            </form>
-                            <div class="body">
-                                <h1 class="title">Get in Touch</h1>
-                                <P>Hi , am Moses a front-end developer with one year experience , I develop and design webpages, websites and web applications using HTML, CSS with SASS, JAVASCRIPT and PHP with my SQL.</P>
-                                <ul>
-                                    <li><i class="fa fa-map"></i> <span>KAMPALA, UGANDA</span></li>
-                                    <li><i class="fa fa-phone"></i> <span>(617) 557-0089</span></li>
-                                    <li><i class="fa fa-envelope"></i> <span>lulemoses67@gmail.com</span></li>
-                                </ul>
-                                <div class="social-link">
-                                    <a href=""><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href=""><i class="fa fa-instagram fa-lg"></i></a>
-                                    <a href=""><i class="fa fa-twitter fa-lg"></i></a>
-                                    <a href=""><i class="fa fa-linkedin fa-lg"></i></a>
-                                    <a href=""><i class="fa fa-github fa-lg"></i></a>
-                                </div>
+                    <div class="col-md-12 col-lg-9">
+                        <form action="">
+                            <h2>Send us your Feedback</h2>
+                            <div class="form-element">
+                                <label for="fisrtname">First Name</label>
+                                <input type="text" name="fisrtname" id="fisrtname" placeholder="First Name" required>
                             </div>
-                        </div>
+                            <div class="form-element">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" id="subject" placeholder="Subject"required >
+                            </div>
+                            <div class="form-element">
+                                <label for="message">Message</label>
+                                <textarea name="details" id="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                            </div>
+                            <div class="btn-group">
+                                <button type="submit" class="btn-outline">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="copyright">
-            <p>&copy; Copyright Lule Moses. All Rights Reserved</p>
-            <p>Designed by Lule Moses</p>
-        </section>
+        <!-- ======= /Contact ======= -->
+        <div class="copyright">
+            <p>&copy; Open Source. Designed by Lule Moses</p>
+        </div>
     </footer>
-    <!--/ footer-->
-    <!-- hero template-->
-    <script id="hero-template" type="text/x-handlebars-template">
-        <div class="hero-body">
-            <img src="{{img}}" alt="{{img}}"/>
-            <h3>{{profile}}</h3>
-            <p>{{details}}</p>
-        </div>
-    </script>
-    <!-- /hero template-->
-    <!-- Nav template-->
-    <script id="nav-template" type="text/x-handlebars-template">
-        <ul class="nav-bar">
-            {{#each navs}}
-                <li><a href="{{navLink}}">{{navName}}</a></li>
-            {{/each}}
-            <li><a href="" class="btn btn-green">hire</a></li>
-        </ul>
-    </script>
-    <!--/ Nav template-->
-    <!-- About-card template-->
-    <script id="about-template" type="text/x-handlebars-template">
-        <div class="about-preview">
-            <div class="body">
-                <img src="{{img}}" alt="{{img}}">
-                <ul>
-                    <li>Name: <span>{{name}}</span></li>
-                    <li>Profile: <span>{{profile}}</span></li>
-                    <li>Email: <span><a href="mailto:{{email}}">{{email}}</a></span></li>
-                    <li>Phone: <span><a href="tel:{{phone}}">{{phone}}</a></span></li>
-                </ul>
-            </div>
-            <div class="details">
-                <h2>About Me</h2>
-                <p>{{description}}</p>
-            </div>
-        </div>
-    </script>
-    <!--/ About-card template-->
-    <!--work card template-->
-    <script id="work-template" type="text/x-handlebars-template">
-        {{#each projects}}
-        <article class="card">
-            <div class="card-header">
-                <h1>{{project}}</h1>
-            </div>
-            <div class="card-body">
-                <p>hi</p>
-                <ul>
-                    <li class="tag tag-blue">{{category}}</li>
-                    <li>
-                        <a href="{{view}}">
-                            <span class="tag tag-danger"><i class="fa fa-eye"></i> view</span>
-                        </a>
-                        <a href="{{code}}">
-                            <span class="tag tag-red"><i class="fa fa-code"></i> code</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </article>
-        {{/each}}
-    </script>
-    <!--/work card template-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- ======= /Footer ======= -->
+    <!-- ======= Scripts ======= -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
-    <script src="./assets/js/dbTemplates.js"></script>
-    <script src="./assets/js/templates.js"></script>
+
+    <!-- Template Main JS File -->
     <script src="./assets/js/index.js"></script>
-    <!--/ scripts-->
+    <!-- ======= /Scripts ======= -->
 </body>
 </html>
