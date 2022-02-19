@@ -390,6 +390,11 @@ address p {
 }
 .skills-card li, .skills-card .grid-title {
   padding: 6px;
+  transition: 1s;
+}
+.skills-card li:hover, .skills-card .grid-title:hover {
+  font-size: 120%;
+  font-weight: bold;
 }
 
 .works {

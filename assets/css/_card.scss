@@ -144,7 +144,14 @@ address{
         grid-column: 2/3;
         border-left: 5px solid $primary;
     }
-    li,.grid-title{padding: 6px;}
+    li,.grid-title{
+        padding: 6px;
+        transition: 1s;
+        &:hover{
+            font-size: 120%;
+            font-weight: bold;
+        }
+    }
 }
 //works container responsive
 .works{
