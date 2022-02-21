@@ -31,14 +31,14 @@ $(() => {
                 i++;
             } else if (i >= x.length ) {
                 i = 0;
-                y = '';
+                y = "";
             }
         }, 250);
         console.log(x.length);
     }
     
-    animatedText('#lul','Hi , am Moses a Front-end Developer.');
+    animatedText('#lul','A Front-end Developer.');
     //breadcrumbs
-   
+    $(".hero").delay(1000).animate({ opacity: 1 }, 700);
     
 });

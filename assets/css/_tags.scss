@@ -27,12 +27,21 @@
     @include set-bg-color($detail,white);
 }
 
-#buy{
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 50%;
-    @include set-bg-color($success,white);
-    @include box-shadow;
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        margin: 30px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        &:hover{
+            border-width: 2px;
+        }
+    }
 }
