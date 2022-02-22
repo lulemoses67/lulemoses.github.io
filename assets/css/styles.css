@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Asap&family=Cedarville+Cursive&family=Open+Sans:ital,wght@0,300;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -28,7 +29,7 @@ p {
   padding: 8px 10px;
 }
 
-.tag, .tag-detail, .tag-danger, .tag-success, .tag-warning, .tag-primary {
+.tag, .tag-white, .tag-detail, .tag-danger, .tag-success, .tag-warning, .tag-primary {
   display: inline-block;
   padding: 5px;
   transform: scale(0.6, 0.6);
@@ -60,6 +61,11 @@ p {
   color: white;
 }
 
+.tag-white {
+  background-color: white;
+  color: #007bff;
+}
+
 .social-media {
   display: flex;
   justify-content: center;
@@ -75,8 +81,18 @@ p {
   border: 1px solid #007bff;
   border-radius: 50%;
 }
-.social-media li:hover {
-  border-width: 2px;
+
+.list-inline {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.list-inline li {
+  margin: 5px;
+  padding: 6px;
+  background-color: #6c757d;
+  color: white;
+  border-radius: 5px;
 }
 
 .btn-group, .btn-group-rt, .btn-group-lt {
@@ -276,9 +292,6 @@ button {
 .product h3, .product p {
   padding: 10px 30px;
 }
-.product p {
-  font-weight: 300;
-}
 .product .me {
   text-decoration-line: line-through;
   font-weight: 200;
@@ -398,7 +411,6 @@ address p {
 }
 .skills-card li, .skills-card .grid-title {
   padding: 6px;
-  transition: 1s;
 }
 .skills-card li:hover, .skills-card .grid-title:hover {
   font-size: 120%;
@@ -422,11 +434,12 @@ address p {
 }
 
 .work {
-  margin: 10px 0;
+  width: 98%;
+  margin: 10px auto;
   padding: 10px 0;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  background-color: rgba(231, 225, 225, 0.863);
-  color: #007bff;
+  background-color: #f8f8f2;
+  color: black;
 }
 .work ul {
   display: flex;
@@ -436,13 +449,27 @@ address p {
 .work ul li {
   margin: 5px;
   padding: 6px;
-  background-color: #6c757d;
-  color: white;
-  border-radius: 5px;
+  font-size: 2em;
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 800px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card .card-header {
+  font-family: cursive;
+  color: #dc3545;
+}
+.card p {
+  padding: 30px;
+  font-size: 1.2em;
 }
 
 form {
   padding: 20px;
+  background-color: #007bff;
+  color: white;
 }
 form .form-element {
   display: grid;
@@ -477,6 +504,22 @@ form .btn-group {
   }
 }
 
+.modal {
+  display: none;
+  position: absolute;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.253);
+}
+.modal #close-modal {
+  margin: 0 30px;
+  text-align: right;
+  font-size: 2em;
+  color: white;
+}
+
 header, section, .container, nav {
   width: 100%;
   box-sizing: border-box;
@@ -495,6 +538,7 @@ section .section-title {
   margin: 30px auto;
   max-width: 100px;
   text-align: center;
+  border-bottom: 5px solid white;
 }
 section:hover .section-title {
   border-bottom: 5px solid #007bff;
@@ -676,20 +720,30 @@ main {
 }
 #hero .title {
   font-size: 4em;
-  font-family: cursive;
 }
 #hero .hero {
   opacity: 0;
-  background: linear-gradient(to bottom, #007bff, #dc3545);
+  background: linear-gradient(45deg, #007bff, #dc3545);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+@media only screen and (max-width: 767px) {
+  #hero .hero .title {
+    font-size: 2em;
+  }
+  #hero .hero p {
+    font-size: 1em;
+  }
+}
+#hero img {
+  width: 200px;
+  border-radius: 50%;
 }
 
 .breadcrumbs {
   display: flex;
   padding: 10px;
   font-size: 90%;
-  font-weight: 200;
   background-color: #e9ecef;
   color: #6c757d;
 }
@@ -703,7 +757,6 @@ footer {
 }
 footer p {
   font-size: 1.2em;
-  font-weight: 300;
 }
 footer .copyright {
   background-color: white;
@@ -713,18 +766,37 @@ footer .copyright {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
   background-color: #007bff;
   color: white;
 }
-footer p {
-  font-size: 1.2em;
-  font-weight: 300;
-}
 footer .copyright {
-  background-color: white;
-  color: black;
   padding: 10px;
   text-align: center;
+  font-size: 0.9em;
+}
+footer .copyright p {
+  font-weight: 200;
+}
+footer .nav-bars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .nav-bars li {
+  padding: 20px;
+}
+@media only screen and (max-width: 767px) {
+  footer .nav-bars {
+    display: block;
+    text-align: center;
+    border-top: 1px solid white;
+  }
+  footer .nav-bars li {
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

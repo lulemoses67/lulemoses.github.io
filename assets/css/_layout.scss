@@ -15,12 +15,12 @@ section{
         margin: 30px auto;
         max-width: 100px;
         text-align: center;
+        border-bottom: 5px solid white;
     }
     &:hover{
         .section-title{border-bottom: 5px solid $primary;}
     }
 }
-
 .row{
     display: flex;
     flex-wrap: wrap;

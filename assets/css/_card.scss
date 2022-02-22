@@ -47,7 +47,6 @@
     h3,p{
         padding: 10px 30px;
     }
-    p{font-weight: 300;}
     .me{
         text-decoration-line: line-through;
         font-weight: 200;
@@ -146,7 +145,6 @@ address{
     }
     li,.grid-title{
         padding: 6px;
-        transition: 1s;
         &:hover{
             font-size: 120%;
             font-weight: bold;
@@ -165,10 +163,11 @@ address{
 }
 //work
 .work{
-    margin: 10px 0;
+    width: 98%;
+    margin: 10px auto;
     padding: 10px 0;
     @include box-shadow;
-    @include set-bg-color(rgba(231, 225, 225, 0.863),$primary);
+    @include set-bg-color(rgb(248, 248, 242),black);
     ul{
         display: flex;
         justify-content: flex-end;
@@ -176,11 +175,23 @@ address{
         li{
             margin: 5px;
             padding: 6px;
-            @include set-bg-color($detail,white);
-            border-radius: 5px;
+            font-size: 2em;
         }
     }
 }
 // margin: 5px;
 //             padding: 6px;
 //            
+.card{
+    margin: 0 auto;
+    max-width: 800px;
+    .card-header{
+        font-family: cursive;
+        color: $danger;
+    }
+    p{
+        padding: 30px;
+        font-size: 1.2em;
+    }
+    box-shadow:  3px 5px 15px rgba(0,0,0,0.1);
+}

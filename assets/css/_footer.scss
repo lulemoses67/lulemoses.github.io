@@ -1,14 +1,29 @@
 @import "mixins";
 footer{
+    position: relative;
+    bottom: 0;
     @include set-bg-color($primary,white);
-    p{
-        font-size: 1.2em;
-        font-weight: 300;
-    }
-    //font-size: 2em;
     .copyright{
-        @include set-bg-color(rgb(255, 255, 255),rgb(0, 0, 0));
         padding: 10px;
         text-align: center;
-    }    
+        font-size: 0.9em;
+        p{font-weight: 200;}
+    }
+    .nav-bars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            padding: 20px
+        }
+        @include respond (mobile) {
+            display: block;
+            text-align: center;
+            border-top: 1px solid white;
+            li{
+                padding: 15px 0;
+                border-bottom: 1px solid white;
+            }
+        }
+    }   
 }

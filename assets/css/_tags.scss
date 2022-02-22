@@ -26,7 +26,10 @@
     @extend .tag;
     @include set-bg-color($detail,white);
 }
-
+.tag-white{
+    @extend .tag;
+    @include set-bg-color(white,$primary);
+}
 .social-media{
     display: flex;
     justify-content: center;
@@ -40,8 +43,16 @@
         height: 30px;
         border: 1px solid $primary;
         border-radius: 50%;
-        &:hover{
-            border-width: 2px;
-        }
     }
+}
+.list-inline{
+    display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        li{
+            margin: 5px;
+            padding: 6px;
+            @include set-bg-color($detail,white);
+            border-radius: 5px;
+        }
 }

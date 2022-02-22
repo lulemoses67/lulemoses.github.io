@@ -16,13 +16,20 @@ main{
     p{font-size: 2em;}
     .title{
         font-size: 4em;
-        font-family: cursive;
     }
     .hero{
         opacity: 0;
-        background: linear-gradient(to bottom,$primary,$danger);
+        background: linear-gradient(45deg,$primary,$danger);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+        @include respond (mobile) {
+            .title{font-size: 2em;}
+            p{font-size: 1em;}
+        }
+    }
+    img{
+        width: 200px;
+        border-radius: 50%;
     }
 }
 //breadcrumbs
@@ -30,7 +37,6 @@ main{
     display: flex;
     padding: 10px;
     font-size: 90%;
-    font-weight: 200;
     @include set-bg-color(#e9ecef,#6c757d);
     li{padding: 0 5px;}
 }
@@ -39,7 +45,6 @@ footer{
     @include set-bg-color($primary,white);
     p{
         font-size: 1.2em;
-        font-weight: 300;
     }
     //font-size: 2em;
     .copyright{

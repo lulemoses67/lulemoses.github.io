@@ -2,6 +2,7 @@
 // form
 form{
     padding: 20px;
+    @include set-bg-color($primary,white);
     .form-element{
         @include grid-container (4);
         grid-gap: 5px;
