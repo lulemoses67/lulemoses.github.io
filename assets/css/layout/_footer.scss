@@ -1,0 +1,9 @@
+@import "../base/mixins";
+footer{
+    padding: 20px 0;
+    @include set-bg-color(#000,white);
+    .nav-bars{
+        margin: 0 auto;
+        max-width: 800px;
+    }
+} 

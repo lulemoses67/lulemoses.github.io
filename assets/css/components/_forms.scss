@@ -1,0 +1,58 @@
+@import '../base/mixins';
+@import '../base/colors';
+
+input,textarea,select{
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgba(179, 177, 177, 0.863);
+    border-radius: 5px;
+}
+//Search input
+input[type='search']{
+    @extend input;
+    width: 100%;
+}
+
+form{
+    .form-element{
+        @include grid-container (12);
+        grid-gap: 5px;
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    label{
+        grid-column: 1/13;
+        align-self: flex-start;
+        padding: 10px;
+        font-weight: bolder;
+    }
+    input,textarea{grid-column: 1/13;}
+}
+.form{
+    margin: 0 auto;
+    max-width: 500px;
+    @include box-shadow;
+}
+.login{
+    @extend .form;
+}
+.contact-form{
+    @extend .form;
+}
+.register-form{
+    border: 1px solid $primary;
+    input,select{
+        margin-left: 0;
+        width: auto;
+    }
+    .form-element{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        label{
+            width: 60px;
+        }
+    }
+}

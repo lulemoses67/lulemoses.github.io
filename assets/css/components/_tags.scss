@@ -1,10 +1,12 @@
-@import "mixins";
+@import '../base/mixins';
+@import '../base/colors';
 
 .tag{
     display: inline-block;
-    padding: 5px;
-    transform: scale(0.6,0.6);
+    padding: 6px;
+    transform: scale(0.8,0.8);
     font-weight: 200;
+    border-radius: 8px;
 }
 .tag-primary{
     @extend .tag;
@@ -28,8 +30,10 @@
 }
 .tag-white{
     @extend .tag;
-    @include set-bg-color(white,$primary);
+    @include set-bg-color(white,black);
+    border: 1px inset black;
 }
+
 .social-media{
     display: flex;
     justify-content: center;
@@ -39,20 +43,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30px;
-        height: 30px;
-        border: 1px solid $primary;
+        width: 20px;
+        height: 20px;
+        border: 1px solid white;
         border-radius: 50%;
+        &:hover{
+            @include set-bg-color(white, $detail);
+        }
     }
 }
-.list-inline{
-    display: flex;
-        justify-content: flex-end;
+
+.breadcrumb{
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid $primary;
+    li{
+        display: inline-block;
         padding: 10px;
-        li{
-            margin: 5px;
-            padding: 6px;
-            @include set-bg-color($detail,white);
-            border-radius: 5px;
-        }
+        color: $detail;
+    }
+}
+
+.date{
+    display: block;
+    padding: 10px;
+    font-size: smaller;
 }
