@@ -48,7 +48,6 @@ $(() => {
             }, 1000);
         } 
     }, 250);
-    console.log(x.length);
   }
   
   animatedText('#lul','A Front-end Developer.');
