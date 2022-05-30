@@ -39,7 +39,7 @@ const data = {
             'about' : "A css-library used to develop awesome user interface like this site is using. Developed i sass and some javascripts and can be modified and very easy to using by add some classes to html elements. Butttons, grid, cards, forms and more",
             'sourceCode' : "https://github.com/lulemoses67/fiora-1.0/tree/main/New%20folder",
             'link' : "./hul.html",
-            'duration' : '2021 - present',
+            'duration' : '2022 - present',
             'progLang' : [
                 "fa-brands fa-css3",
                 "fab fa-sass",
@@ -66,7 +66,7 @@ const data = {
             'category' : 'portfolio',
             'about' : "A simple javascript program that can filter data by search, single detailed data, display all data in browser and filter data by any object property. Object are displayed using handlebars a simple js templating library.",
             'pen' : "https://github.com/lulemoses67/lulemoses.github.io",
-            'duration' : '2022 (April) - present',
+            'duration' : '2022',
             'progLang' : [
                 "fa-brands fa-js-square"
                 
@@ -75,9 +75,9 @@ const data = {
         {
             'projectName' : 'Allianz Soccer',
             'category' : 'E-sports',
-            'about' : "An awesome portilio for any professional worker to highlight his or her experience and projects done in certain feilds. Responsive and also developed using Hulstrap my css-library.",
+            'about' : "Allianz Soccer Academy is a soccer Academy in Kampala, capital of Uganda. The academy tries so hard to train and instill football skills in young talents and expose them in the football world.(it is a non profitable organization).",
             'preview' : "https://lulem.000webhostapp.com/allianzsoccer/index.php",
-            'duration' : '2021 - present',
+            'duration' : '2022(April) - present',
             'progLang' : [
                 "fa-brands fa-html5",
                 "fa-brands fa-css3",

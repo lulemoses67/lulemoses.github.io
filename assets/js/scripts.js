@@ -1,6 +1,12 @@
 $(() => {
-
-    {
+  
+  {
+    //pre loader
+    setInterval(() => {
+      $('#preLoader').fadeOut();
+    }, 1000);
+  }
+  {
   
       //button to toggle the menu on small screens
       $('.btn-menu').on("click", () => {
@@ -31,7 +37,6 @@ $(() => {
     }
     
     
-  
   
   
     {
