@@ -1,0 +1,18 @@
+@import '../base/mixins';
+@import '../base/colors';
+main{
+    margin-top: 20px;
+}
+.hero{
+    border: none;
+    height: 96vh;
+    h2{font-size: 3em;}
+    p{font-size: 2em;}
+    padding: 0;
+    @include respond(laptop){
+        background-image: url("../../../public/assets/imgs/lulemoses.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 50%;
+    }
+}
